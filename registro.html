@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Usuario</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; height: 100vh; display: flex; justify-content: center; align-items: center;
+               background: url('images/fondo-sin-texto.jpg') center/cover no-repeat; }
+        .registro-contenedor { background: white; padding: 30px; border-radius: 8px; width: 400px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
+        h2 { text-align: center; margin-bottom: 20px; color: #333; }
+        form { display: flex; flex-direction: column; }
+        label { margin-bottom: 5px; font-weight: bold; }
+        input { padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; }
+        input[type="submit"] { background: #007bff; color: white; border: none; cursor: pointer; transition: 0.3s; }
+        input[type="submit"]:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="registro-contenedor">
+        <h2>Registro de Usuario</h2>
+        <form action="iniciar sesión.html" method="POST">
+        <label>correo electronico:</label> <input type="correo electronico">
+        <label>contraseña:</label> <input type="contraseña">
+        <label>curp:</label> <input type="curp">
+        <label>fecha de nacimiento:</label> <input type="date">
+        <label>codigo postal:</label> <input type="codigo postal">
+        <label>numero de celular:</label> <input type="numero de celular">
+            <input type="submit" value="Registrarse">
+        </form>
+    </div>
+</body>
+</html>

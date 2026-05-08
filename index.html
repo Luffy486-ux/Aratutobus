@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel AR - Viaja a cualquier evento</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+        nav { background: #333; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: white; font-weight: bold; font-size: 24px; text-decoration: none; }
+        .nav-links a { color: white; text-decoration: none; margin-left: 20px; font-size: 14px; }
+        .btn-nav { padding: 8px 15px; border-radius: 5px; text-decoration: none; }
+        .btn-login { color: #2bff00; border: 1px solid #0011ff; }
+        .btn-reg { background: #0004ff; color: white; margin-left: 10px; }
+        
+        .hero { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/bus-banner.jpg'); 
+                height: 400px; background-size: cover; display: flex; align-items: center; padding: 0 10%; color: white; }
+        .hero h1 { font-size: 48px; max-width: 600px; }
+
+        .search-container { padding: 50px 10%; background: #f4f4f4; display: flex; gap: 30px; }
+        .search-box { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); flex: 1; }
+        .search-box h2 { color: #00ff55; margin-bottom: 20px; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; color: #555555; }
+        .form-group input, .form-group select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        .btn-submit { background: #020202; color: white; border: none; padding: 12px 25px; border-radius: 5px; cursor: pointer; width: 100%; font-size: 16px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">TRAVEL AR</a>
+        <div class="nav-links">
+            <a href="#">HOME</a>
+            <a href="#">Nosotros</a>
+            <a href="contacto.html" class="btn-nav btn-login">Contacto.html</a> 
+            <a href="iniciar viaje.html" class="btn-nav btn-login">Iniciar viaje</a>
+            <a href="Formulario.html" class="btn-nav btn-reg">Formulario</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>VIAJE MAGICO</h1>
+    </div>
+
+    <div class="search-container">
+        <div class="search-box">
+            <h2>BUSCA TU LUGAR PREFERIDO</h2>
+            <form>
+                <div class="form-group">
+                    <label>Destino Magico:</label>
+                    <select><option>Selecciona tu viaje</option></select>
+                </div>
+                <div class="form-group">
+                    <label>Fecha de Ida:</label>
+                    <input type="date">
+                </div>
+                <div class="form-group">
+                    <label>Fecha de Vuelta:</label>
+                    <input type="date">
+                </div>
+                <button type="submit" class="btn-submit">Enviar</button>
+            </form>
+        </div>
+        <div style="flex: 1;">
+            </div>
+    </div>
+
+    <!-- Aquí va el link de tu chatbot -->
+    <script src="chatbot.js"></script>
+</body>
+</html>
